@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function porcentagemMenoresQue100(numeros) {
+    
+    const menoresQue100 = numeros.filter(num => num < 100).length;
+    
+    
+    const porcentagem = (menoresQue100 / numeros.length) * 100;
+    
+    
+    return porcentagem.toFixed(2) + '%';
+}
+
+
+const listaNumeros = [150, 90, 30, 200, 75, 120, 50, 99];
+const resultado = porcentagemMenoresQue100(listaNumeros);
+console.log(`A porcentagem de números menores que 100 é: ${resultado}`);
+    </script>
+</body>
+</html>
